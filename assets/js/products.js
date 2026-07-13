@@ -92,17 +92,6 @@ window.AURUM_PRODUCTS = [
       "Two ristretto shots crowned with silky microfoam. The Aurum flat white is dialed daily for balance — never bitter, never watery.",
   },
   {
-    id: "pour-over",
-    name: "V60 Pour-Over",
-    price: 6.5,
-    category: "coffee",
-    tag: "",
-    image: "https://images.unsplash.com/photo-1497935586351-b67a49eebaa0?auto=format&fit=crop&w=900&q=80",
-    desc: "Hand-brewed to order. Ask your barista for today's featured origin.",
-    longDesc:
-      "Hand-poured Hario V60, one cup at a time. Your barista will guide you through today's featured origin and brew parameters.",
-  },
-  {
     id: "oat-cappuccino",
     name: "Oat Cappuccino",
     price: 5.75,
@@ -125,17 +114,6 @@ window.AURUM_PRODUCTS = [
       "A classic Earl Grey with pronounced bergamot and cornflower petals, served as a pot for one with honey on the side.",
   },
   {
-    id: "matcha-latte",
-    name: "Ceremonial Matcha Latte",
-    price: 5.5,
-    category: "tea",
-    tag: "",
-    image: "https://images.unsplash.com/photo-1564890369473-e3a4ff86e4e1?auto=format&fit=crop&w=900&q=80",
-    desc: "Stone-ground Uji matcha whisked with steamed milk of your choice.",
-    longDesc:
-      "Ceremonial-grade Uji matcha whisked by hand with your choice of milk. Vibrant, umami-rich, and naturally energizing.",
-  },
-  {
     id: "chamomile",
     name: "Chamomile & Honey",
     price: 4.25,
@@ -156,17 +134,6 @@ window.AURUM_PRODUCTS = [
     desc: "16-hour steep, chocolate-forward, served over ice with optional oat milk.",
     longDesc:
       "Coarse-ground coffee steeped for sixteen hours, resulting in a smooth, chocolate-forward cup. Served over ice; oat milk optional.",
-  },
-  {
-    id: "citrus-press",
-    name: "Citrus Press",
-    price: 6.0,
-    category: "cold",
-    tag: "",
-    image: "https://images.unsplash.com/photo-1623065422902-30a2d94befe8?auto=format&fit=crop&w=900&q=80",
-    desc: "Fresh orange, grapefruit, and a touch of ginger — pressed to order.",
-    longDesc:
-      "Orange and grapefruit pressed to order with a whisper of fresh ginger. Bright, hydrating, and caffeine-free.",
   },
   {
     id: "iced-matcha",
@@ -222,17 +189,6 @@ window.AURUM_PRODUCTS = [
     desc: "72-layer laminated dough with cultured European butter.",
     longDesc:
       "Seventy-two layers of laminated dough and cultured European butter, baked golden every morning. Flaky, fragrant, and best warm.",
-  },
-  {
-    id: "almond-croissant",
-    name: "Almond Croissant",
-    price: 5.75,
-    category: "bakery",
-    tag: "",
-    image: "https://images.unsplash.com/photo-1623334044303-241021148843?auto=format&fit=crop&w=900&q=80",
-    desc: "Twice-baked with almond cream and toasted sliced almonds.",
-    longDesc:
-      "Day-one croissants filled with almond cream, baked again until fragrant, and finished with toasted almonds and a dusting of sugar.",
   },
   {
     id: "sourdough",
