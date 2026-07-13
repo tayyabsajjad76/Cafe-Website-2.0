@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-lead {
   font-size: 1.0625rem;
   color: var(--color-text-muted);
-  max-width: 540px;
+  /* max-width: 540px; */
   line-height: 1.75;
 }
 
