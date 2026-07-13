@@ -364,6 +364,96 @@
     bottom: 5.25rem;
     right: 1rem;
   }
+
+
+
+  
+/* ===============================
+   Contact Page Fix
+================================= */
+
+.page-hero__content{
+    width:100%;
+    max-width:100%;
+}
+
+.page-hero__content h1{
+    font-size:2.8rem;
+    line-height:1.1;
+}
+
+.page-hero__content p{
+    max-width:100%;
+    width:100%;
+    font-size:1rem;
+    line-height:1.6;
+    word-break:break-word;
+}
+
+.contact-layout{
+    grid-template-columns:1fr;
+    gap:2rem;
+}
+
+.contact-form-wrap,
+.contact-details{
+    width:100%;
+}
+
+/* ===============================
+   Checkout Page Fix
+================================= */
+
+.checkout-layout{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:2rem;
+}
+
+.checkout-form,
+.checkout-summary{
+    width:100%;
+}
+
+.checkout-summary{
+    position:static;
+}
+
+.form-row{
+    grid-template-columns:1fr;
+}
+
+.form-row>*{
+    width:100%;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+/* ===============================
+   Prevent Horizontal Scroll
+================================= */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.page-hero,
+.page-hero__content,
+.contact-layout,
+.checkout-layout{
+    overflow-x:hidden;
+}
+
+body{
+    overflow-x:hidden;
+}
 }
 
 /* Small phones */
