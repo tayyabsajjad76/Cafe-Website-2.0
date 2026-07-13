@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurum Café — specialty coffee, artisan bakery, and warm hospitality in the heart of the city. Explore our menu and reserve a table.">
+  <meta name="keywords" content="café, specialty coffee, bakery, brunch, Aurum Café, coffee shop">
+  <meta name="author" content="Aurum Café">
+  <meta property="og:title" content="Aurum Café — Specialty Coffee & Artisan Bakery">
+  <meta property="og:description" content="Where craft coffee meets quiet luxury. Specialty beans, fresh pastry, and thoughtful hospitality.">
+  <meta property="og:type" content="website">
+  <title>Aurum Café — Specialty Coffee & Artisan Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+</head>
+<body>
+  <div class="page-loader" aria-hidden="true">
+    <div class="page-loader__brand">Aurum <span>Café</span></div>
+  </div>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Aurum Café Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="#c4a35a" stroke-width="2"/>
+            <path d="M12 24c2-6 4-10 8-10s6 4 8 10" stroke="#c4a35a" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="20" cy="14" r="2.5" fill="#c4a35a"/>
+          </svg>
+        </span>
+        <span class="logo-text">Aurum <span>Café</span></span>
+      </a>
+
+      <div class="header-actions header-actions--mobile">
+        <a href="pages/cart.html" class="nav-cart" aria-label="Shopping cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/><path d="M6 6L5 3H2"/></svg>
+          <span class="nav-cart__count" data-cart-count hidden>0</span>
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" role="navigation" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="pages/about.html" class="nav-link">About</a></li>
+          <li><a href="pages/menu.html" class="nav-link">Menu</a></li>
+          <li><a href="pages/gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="pages/reservation.html" class="nav-link">Reservation</a></li>
+          <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="header-actions header-actions--desktop">
+          <a href="pages/cart.html" class="nav-cart" aria-label="Shopping cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.2"/><circle cx="18" cy="20" r="1.2"/><path d="M6 6L5 3H2"/></svg>
+            <span class="nav-cart__count" data-cart-count hidden>0</span>
+          </a>
+          <a href="pages/reservation.html" class="btn btn--gold btn--sm nav-cta">Book a Table</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-label="Welcome">
+      <div class="hero__media">
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1920&q=80"
+          alt="Barista pouring latte art in a sunlit café"
+          width="1920"
+          height="1280"
+          fetchpriority="high"
+        >
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__brand">Aurum <em>Café</em></h1>
+          <p class="hero__tagline">Specialty coffee and artisan bakery — crafted slowly, served with quiet luxury in the heart of the city.</p>
+          <div class="btn-group">
+            <a href="pages/menu.html" class="btn btn--gold btn--lg">Explore Menu</a>
+            <a href="pages/reservation.html" class="btn btn--outline-light btn--lg">Book a Table</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Popular Menu -->
+    <section class="section" id="popular">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="eyebrow">From Our Kitchen</p>
+          <h2 class="section-title">Popular Selections</h2>
+          <p class="section-lead">Signature cups and plates our guests return for — roasted, baked, and plated with care every morning.</p>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card reveal reveal-delay-1">
+            <a class="menu-card__link" href="pages/product.html?id=espresso">
+              <div class="menu-card__image">
+                <span class="menu-card__tag menu-card__tag--popular">Popular</span>
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Espresso in a ceramic cup" loading="lazy" width="800" height="600">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <h3 class="menu-card__name">Single Origin Espresso</h3>
+                  <span class="menu-card__price">$4.50</span>
+                </div>
+                <p class="menu-card__desc">Bright Ethiopian notes of bergamot and cocoa — pulled to order on our La Marzocco.</p>
+              </div>
+            </a>
+            <div class="menu-card__actions">
+              <a class="btn btn--secondary btn--sm" href="pages/product.html?id=espresso">View</a>
+              <button type="button" class="btn btn--primary btn--sm" data-add-cart="espresso">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-2">
+            <a class="menu-card__link" href="pages/product.html?id=aurum-breakfast">
+              <div class="menu-card__image">
+                <span class="menu-card__tag">Best Seller</span>
+                <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Breakfast plate with eggs and toast" loading="lazy" width="800" height="600">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <h3 class="menu-card__name">Aurum Breakfast</h3>
+                  <span class="menu-card__price">$16.00</span>
+                </div>
+                <p class="menu-card__desc">Soft scrambled eggs, herb butter toast, avocado, and house-cured salmon.</p>
+              </div>
+            </a>
+            <div class="menu-card__actions">
+              <a class="btn btn--secondary btn--sm" href="pages/product.html?id=aurum-breakfast">View</a>
+              <button type="button" class="btn btn--primary btn--sm" data-add-cart="aurum-breakfast">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="menu-card reveal reveal-delay-3">
+            <a class="menu-card__link" href="pages/product.html?id=dark-forest">
+              <div class="menu-card__image">
+                <span class="menu-card__tag menu-card__tag--new">New</span>
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&q=80" alt="Layered chocolate dessert" loading="lazy" width="800" height="600">
+              </div>
+              <div class="menu-card__body">
+                <div class="menu-card__meta">
+                  <h3 class="menu-card__name">Dark Forest Gateau</h3>
+                  <span class="menu-card__price">$9.50</span>
+                </div>
+                <p class="menu-card__desc">Valrhona chocolate sponge, cherry compote, and lightly whipped cream.</p>
+              </div>
+            </a>
+            <div class="menu-card__actions">
+              <a class="btn btn--secondary btn--sm" href="pages/product.html?id=dark-forest">View</a>
+              <button type="button" class="btn btn--primary btn--sm" data-add-cart="dark-forest">Add to Cart</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center mt-2xl reveal">
+          <a href="pages/menu.html" class="btn btn--secondary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="eyebrow">The Aurum Difference</p>
+          <h2 class="section-title">Why Guests Choose Us</h2>
+          <p class="section-lead">Every detail — from bean origin to table setting — is chosen to make your visit feel intentional.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-item reveal reveal-delay-1">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 8h1a4 4 0 010 8h-1M3 8h14v9a4 4 0 01-4 4H7a4 4 0 01-4-4V8z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg>
+            </div>
+            <h3>Premium Coffee Beans</h3>
+            <p>Direct-trade lots roasted in small batches for peak aroma and clarity in every cup.</p>
+          </div>
+          <div class="feature-item reveal reveal-delay-2">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Fresh Ingredients</h3>
+            <p>Seasonal produce, cultured butter, and house-milled flour — sourced from trusted local makers.</p>
+          </div>
+          <div class="feature-item reveal reveal-delay-3">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3>Thoughtful Service</h3>
+            <p>Attentive without rush. Your latte arrives correctly — and your table never feels forgotten.</p>
+          </div>
+          <div class="feature-item reveal reveal-delay-4">
+            <div class="feature-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Warm Hospitality</h3>
+            <p>A team that remembers how you take your coffee and welcomes you like a regular from day one.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="eyebrow">Guest Voices</p>
+          <h2 class="section-title">What People Are Saying</h2>
+          <p class="section-lead">Words from guests who make Aurum part of their weekly ritual.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <blockquote class="review-card reveal reveal-delay-1">
+            <div class="review-card__stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__text">“The flat white here ruined other cafés for me. Quiet space, beautiful cups, and pastry that tastes like Paris.”</p>
+            <footer class="review-card__author">
+              <img class="review-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="" width="48" height="48" loading="lazy">
+              <div>
+                <cite class="review-card__name">Elena Marchetti</cite>
+                <p class="review-card__role">Regular since 2022</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review-card reveal reveal-delay-2">
+            <div class="review-card__stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__text">“We booked a corner table for a client breakfast. Flawless service, exceptional pour-over, zero pretension.”</p>
+            <footer class="review-card__author">
+              <img class="review-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="" width="48" height="48" loading="lazy">
+              <div>
+                <cite class="review-card__name">James Okonkwo</cite>
+                <p class="review-card__role">Creative Director</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="review-card reveal reveal-delay-3">
+            <div class="review-card__stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="review-card__text">“Their almond croissant is a weekly ritual. Soft layers, proper almond cream — worth every visit.”</p>
+            <footer class="review-card__author">
+              <img class="review-card__avatar" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&q=80" alt="" width="48" height="48" loading="lazy">
+              <div>
+                <cite class="review-card__name">Sofia Chen</cite>
+                <p class="review-card__role">Food Writer</p>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section section--dark section--tight">
+      <div class="container">
+        <div class="stats-bar">
+          <div class="stat-item reveal">
+            <div class="stat-item__number" data-count="12" data-suffix="+">0</div>
+            <p class="stat-item__label">Years Crafting</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-item__number" data-count="48" data-suffix="">0</div>
+            <p class="stat-item__label">Origin Coffees</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-item__number" data-count="25000" data-suffix="+">0</div>
+            <p class="stat-item__label">Cups Served Yearly</p>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-item__number" data-count="98" data-suffix="%">0</div>
+            <p class="stat-item__label">Guest Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="eyebrow">Atmosphere</p>
+          <h2 class="section-title">Inside Aurum</h2>
+          <p class="section-lead">Soft light, warm wood, and the quiet rhythm of a well-run café.</p>
+        </div>
+
+        <div class="gallery-preview reveal">
+          <a href="pages/gallery.html" class="gallery-preview__item" data-full="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=900&q=80" alt="Café interior with wooden tables" loading="lazy" width="900" height="700">
+          </a>
+          <a href="pages/gallery.html" class="gallery-preview__item">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49eebaa0?auto=format&fit=crop&w=600&q=80" alt="Fresh coffee beans" loading="lazy" width="600" height="400">
+          </a>
+          <a href="pages/gallery.html" class="gallery-preview__item">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Golden croissants on a tray" loading="lazy" width="600" height="400">
+          </a>
+          <a href="pages/gallery.html" class="gallery-preview__item">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Latte with foam art" loading="lazy" width="600" height="400">
+          </a>
+          <a href="pages/gallery.html" class="gallery-preview__item">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e7382450f?auto=format&fit=crop&w=600&q=80" alt="Guests enjoying coffee together" loading="lazy" width="600" height="400">
+          </a>
+        </div>
+
+        <div class="text-center mt-2xl reveal">
+          <a href="pages/gallery.html" class="btn btn--secondary">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="section section--gray" id="blog">
+      <div class="container">
+        <div class="section-header section-header--center reveal">
+          <p class="eyebrow">From the Journal</p>
+          <h2 class="section-title">Latest from Our Blog</h2>
+          <p class="section-lead">Stories on coffee craft, pastry technique, and café culture.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-card__image">
+              <img src="https://images.unsplash.com/photo-1497935586351-b67a49eebaa0?auto=format&fit=crop&w=800&q=80" alt="Coffee beans" loading="lazy">
+            </div>
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Roasting · Mar 12, 2026</p>
+              <h3>How We Choose a Single Origin</h3>
+              <p>From cupping tables to your cup — the quiet process behind every rotating espresso lot.</p>
+              <a href="pages/blog.html" class="btn btn--secondary btn--sm">Read More</a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal-delay-1">
+            <div class="blog-card__image">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Croissants" loading="lazy">
+            </div>
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Bakery · Feb 28, 2026</p>
+              <h3>The 72-Layer Croissant</h3>
+              <p>Lamination, rest, and butter temperature — why patience is the secret ingredient.</p>
+              <a href="pages/blog.html" class="btn btn--secondary btn--sm">Read More</a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal-delay-2">
+            <div class="blog-card__image">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Café interior" loading="lazy">
+            </div>
+            <div class="blog-card__body">
+              <p class="blog-card__meta">Culture · Feb 10, 2026</p>
+              <h3>Designing a Room for Lingering</h3>
+              <p>Light, wood, and sound — how we shape atmosphere without saying a word.</p>
+              <a href="pages/blog.html" class="btn btn--secondary btn--sm">Read More</a>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-2xl reveal">
+          <a href="pages/blog.html" class="btn btn--secondary">View All Posts</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner">
+      <div class="cta-banner__bg">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=80" alt="" loading="lazy" width="1600" height="900">
+      </div>
+      <div class="cta-banner__overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-banner__content reveal">
+          <p class="eyebrow">Reserve Your Spot</p>
+          <h2>Join Us for Coffee Worth Savoring</h2>
+          <p>Tables fill quickly on weekends. Reserve ahead and let us prepare something memorable for you.</p>
+          <div class="btn-group">
+            <a href="pages/reservation.html" class="btn btn--gold btn--lg">Book Now</a>
+            <a href="pages/contact.html" class="btn btn--outline-light btn--lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-text">Aurum <span>Café</span></span>
+          </a>
+          <p>Specialty coffee and artisan bakery in a calm, refined space designed for lingering conversations and exceptional cups.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+            <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://twitter.com" class="social-link" aria-label="Twitter / X" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.227-8.26L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+            </a>
+            <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/menu.html">Menu</a></li>
+            <li><a href="pages/gallery.html">Gallery</a></li>
+            <li><a href="pages/reservation.html">Reservation</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/cart.html">Cart</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Opening Hours</h4>
+          <ul class="footer-hours">
+            <li><span class="day">Mon – Fri</span> <span>7:00 – 20:00</span></li>
+            <li><span class="day">Saturday</span> <span>8:00 – 21:00</span></li>
+            <li><span class="day">Sunday</span> <span>8:00 – 18:00</span></li>
+          </ul>
+          <h4 class="mt-xl">Find Us</h4>
+          <ul class="footer-contact">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>142 Willow Lane, Suite 3<br>Portland, OR 97205</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+15035550142">+1 (503) 555-0142</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              <a href="mailto:hello@aurumcafe.com">hello@aurumcafe.com</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Seasonal menus, roasting notes, and early access to tasting events — once a month, never spam.</p>
+          <form class="newsletter-form" data-validate>
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Your email" data-validate="required|email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aurum Café. All rights reserved.</p>
+        <p><a href="pages/contact.html">Privacy</a> · <a href="pages/contact.html">Terms</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/ui-extras.js"></script>
+</body>
+</html>
