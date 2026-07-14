@@ -30,19 +30,42 @@
   /* ---------- Mobile Navigation ---------- */
   const toggle = $(".nav-toggle");
   const nav = $(".nav");
+  let lockedScrollY = 0;
+
+  const lockScroll = () => {
+    lockedScrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${lockedScrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
+  };
+
+  const unlockScroll = () => {
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+    window.scrollTo(0, lockedScrollY);
+  };
 
   const closeNav = () => {
     toggle?.classList.remove("is-open");
     nav?.classList.remove("is-open");
     header?.classList.remove("menu-open");
-    document.body.style.overflow = "";
+    unlockScroll();
   };
 
   toggle?.addEventListener("click", () => {
     const open = toggle.classList.toggle("is-open");
     nav?.classList.toggle("is-open", open);
     header?.classList.toggle("menu-open", open);
-    document.body.style.overflow = open ? "hidden" : "";
+    if (open) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
   });
 
   $$(".nav-link").forEach((link) => {
