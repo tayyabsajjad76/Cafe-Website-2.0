@@ -367,7 +367,6 @@
 
 
 
-  
 /* ===============================
    Contact Page Fix
 ================================= */
@@ -451,7 +450,7 @@ img{
     overflow-x:hidden;
 }
 
-body{
+html{
     overflow-x:hidden;
 }
 }
